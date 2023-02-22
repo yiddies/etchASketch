@@ -1,0 +1,48 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+.title {
+    font-size: 100px;
+    display: flex;
+    justify-content: center;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+}
+
+.input {
+    display: flex;
+    justify-content: center;
+    margin-top: 25px;
+}
+
+.buttons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 25px;
+    gap: 10px;
+}
+
+.board {
+    width: 500px;
+    height: 500px;
+    display: grid;
+}
+
+button {
+    background-color: white;
+    color: black;
+    height: 45px;
+    width: 90px;
+    border: 1px solid black
+}
+
+.boxes {
+    border: 1px solid black;
+}

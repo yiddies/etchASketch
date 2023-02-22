@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="styles.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <p class="title">Etch-a-Sketch</p>
+    <div class="container">
+        <div class="board"></div>
+    </div>
+    <div class="input">
+        <input type="text" value="16" onchange="chooseSize(this.value)" placeholder="Enter size of board here">
+        <button>Set Size</button>
+    </div>
+
+    <div class="buttons">
+        <input type="color" onchange="chooseColor(this.value)">Change Color</input>
+        <button onclick="resetBoard()">Reset Board</button>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
