@@ -50,11 +50,4 @@ function chooseColor(input) {
     color = input
 }
 
-function changeClick() {
-    click = !click
-    console.log(click)
 
-    if (click = true) {
-        noColor()
-    }
-}
