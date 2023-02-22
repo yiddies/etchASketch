@@ -29,6 +29,11 @@
     gap: 10px;
 }
 
+button:active {
+    background-color: black;
+    color: white;
+}
+
 .board {
     width: 500px;
     height: 500px;
@@ -36,6 +41,7 @@
 }
 
 button {
+    transition: .1s;
     background-color: white;
     color: black;
     height: 45px;

@@ -1,4 +1,12 @@
 let color = "black"
+let eraser = 'white'
+let click = true;
+
+document.addEventListener('keyup', function (event) {
+    if (event.code === 'Enter') {
+        changeClick()
+    }
+})
 
 function createBoard(size) {
     let board = document.querySelector(".board")
@@ -28,6 +36,7 @@ function chooseSize(input) {
 
 function colorSquare() {
     this.style.background = color
+
 }
 
 function resetBoard() {
@@ -39,4 +48,13 @@ function resetBoard() {
 
 function chooseColor(input) {
     color = input
+}
+
+function changeClick() {
+    click = !click
+    console.log(click)
+
+    if (click = true) {
+        noColor()
+    }
 }
