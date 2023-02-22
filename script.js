@@ -1,3 +1,5 @@
+let color = "black"
+
 function createBoard(size) {
     let board = document.querySelector(".board")
     let squares = board.querySelectorAll('div');
@@ -24,8 +26,8 @@ function chooseSize(input) {
         console.log("ERROR")
 }
 
-function colorSquare(choice) {
-    this.style.background = choice
+function colorSquare() {
+    this.style.background = color
 }
 
 function resetBoard() {
@@ -36,10 +38,5 @@ function resetBoard() {
 }
 
 function chooseColor(input) {
-    let board = document.querySelector(".board")
-    let squares = board.querySelectorAll('div');
-
     color = input
-    colorSquare(color)
-
 }
