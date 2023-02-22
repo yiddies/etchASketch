@@ -2,12 +2,6 @@ let color = "black"
 let eraser = 'white'
 let click = true;
 
-document.addEventListener('keyup', function (event) {
-    if (event.code === 'Enter') {
-        changeClick()
-    }
-})
-
 function createBoard(size) {
     let board = document.querySelector(".board")
     let squares = board.querySelectorAll('div');
